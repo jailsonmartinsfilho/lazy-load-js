@@ -29,6 +29,7 @@ body{
     padding-bottom: 1rem;
     border-bottom: 1px solid #E4E4E4;
     width: 1000px;
+    min-height: 500px;
     height: max-content;
 }
 

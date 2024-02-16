@@ -17,7 +17,8 @@ const observer = new IntersectionObserver((entries, observer) =>{
 
         const image = entry.target
         image.src = listalinksimagens[controladorPosicao]
-        console.log(`Link ${listalinksimagens[controladorPosicao]} inserido na src da imagem ${controladorPosicao}`)
+        observer.unobserve(image);
+        console.log(`Link ${listalinksimagens[controladorPosicao]} inserido na src da imagem ${controladorPosicao + 1}`)
         if (controladorPosicao >= 6){
             controladorPosicao = 0;
         }
